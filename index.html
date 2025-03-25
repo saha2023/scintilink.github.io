@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scintilink</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image.jpg');
+      background-size: cover;
+      background-position: center 20%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero p {
+      font-size: 1.5rem;
+    }
+    /* Responsive font sizes for hero section */
+    @media (max-width: 768px) {
+      .hero h1.display-1 {
+        font-size: 2.5rem;
+      }
+      .hero h1.display-2 {
+        font-size: 2rem;
+      }
+      .hero p.lead {
+        font-size: 1rem;
+      }
+    }
+    /* Team card hover effects for non-touch devices */
+    @media (hover: hover) {
+      .team-link:hover .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="margin-left: -10rem; position: relative;">
+        <img src="logo.PNG" alt="Scintilink Logo" class="img-fluid" style="height: 25px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" style="margin-right: -10rem;">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <style>
+        @media (max-width: 991px) {
+          .navbar-brand {
+            position: absolute !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            margin-left: 0 !important;
+          }
+        }
+      </style>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<div class="hero container-fluid">
+  <div class="row min-vh-100 align-items-center">
+    <div class="col-12 col-md-10 col-lg-8 mx-auto px-4">
+      <h1 class="display-3 mb-4 fw-bold text-break">
+        <span class="d-none d-md-inline">Innovating Innovation &</span>
+        <span class="d-md-none">Innovating Innovation & Democratizing Knowledge.</span>
+      </h1>
+      <h1 class="display-4 mb-5 fw-bold text-break">
+        <span class="d-none d-md-inline">Democratizing Knowledge.</span>
+      </h1>
+      <p class="lead mb-4 fw-bold">An AI-first research platform built to accelerate discovery, connect disciplines, and empower every curious mind.</p>
+      <p class="lead mb-5">Are you a researcher, innovator, or curious mind? We're looking for pioneers to test our closed beta. Help shape the next generation of scientific tools.</p>
+      <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+        <a href="https://forms.gle/BGkrALS85F4yjowx6" 
+           target="_blank" 
+           class="btn btn-primary btn-lg px-4 py-3 w-100 w-sm-auto"
+           style="border-radius: 12px; 
+                  box-shadow: 0 6px 12px rgba(0,0,0,0.4); 
+                  background: linear-gradient(45deg, #2196F3, #00BCD4); 
+                  border: none; 
+                  transform: translateY(0); 
+                  transition: all 0.3s ease; 
+                  font-size: clamp(1rem, 2vw, 1.25rem);">
+          <i class="bi bi-rocket-takeoff me-2"></i>Apply to Join Beta
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">The Challenge</h2>
+      <p class="text-center mb-5">Billions are spent. Most breakthroughs don't break through.
+        Research today is fragmented, siloed, and slowed by systems not built for the scale of modern knowledge. Hypothesis generation is inefficient. Reproducibility remains a crisis. And collaboration across domains feels impossible.</p>
+
+      <h2 class="text-center mb-4">Our Mission</h2>
+      <p class="text-center mb-5">To build a future where researchers are empowered by AI that doesn't just assist - but understands, reasons, and accelerates interdisciplinary discovery with trust and transparency.</p>
+
+      <h2 class="text-center mb-4">Transforming Research Forever!</h2>
+      <p class="text-center mb-5">We're not building another tool.
+        We're building the foundation for a new kind of scientific ecosystem- where insights emerge faster, connections are deeper, and knowledge truly becomes power.</p>
+      
+      <h3 class="text-center mb-4">Project Timeline</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="bi bi-rocket-takeoff display-4"></i>
+              <h5 class="card-title">MVP Launch</h5>
+              <p class="card-text">Q2 2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="bi bi-gear display-4"></i>
+              <h5 class="card-title">Beta Access</h5>
+              <p class="card-text">Q3 2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="bi bi-check2-circle display-4"></i>
+              <h5 class="card-title">Official Release</h5>
+              <p class="card-text">Q4 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-5">Meet Our Team</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/mohammednoushir/" target="_blank" class="team-link" style="text-decoration: none; color: inherit;" aria-label="View Mohammed Noushir's LinkedIn profile">
+            <div class="card bg-primary text-white text-center mb-4" style="transition: transform 0.3s, box-shadow 0.3s; height: 100%;">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <img src="noushirheadcropped.png" alt="Mohammed Noushir" class="rounded-circle img-fluid mx-auto d-block mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                  <h5 class="card-title">Mohammed Noushir</h5>
+                  <p class="card-text">Founder & CEO</p>
+                </div>
+                <i class="bi bi-linkedin fs-4 mt-3"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/oshinnarang/" target="_blank" class="team-link" style="text-decoration: none; color: inherit;" aria-label="View Oshin Narang's LinkedIn profile">
+            <div class="card bg-primary text-white text-center mb-4" style="transition: transform 0.3s, box-shadow 0.3s; height: 100%;">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <img src="oshin 2.jpg" alt="Oshin Narang" class="rounded-circle img-fluid mx-auto d-block mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                  <h5 class="card-title">Oshin Narang</h5>
+                  <p class="card-text">Co-Founder & COO</p>
+                </div>
+                <i class="bi bi-linkedin fs-4 mt-3"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/neelay-choudhury-768537152/" target="_blank" class="team-link" style="text-decoration: none; color: inherit;" aria-label="View Neelay Choudhury's LinkedIn profile">
+            <div class="card bg-primary text-white text-center mb-4" style="transition: transform 0.3s, box-shadow 0.3s; height: 100%;">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <img src="Neelay.jpg" alt="Neelay Choudhury" class="rounded-circle img-fluid mx-auto d-block mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                  <h5 class="card-title">Neelay Choudhury</h5>
+                  <p class="card-text">Co-Founder & Head of AI</p>
+                </div>
+                <i class="bi bi-linkedin fs-4 mt-3"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/arkajyoti-saha-likdien/" target="_blank" class="team-link" style="text-decoration: none; color: inherit;" aria-label="View Arkajyoti Saha's LinkedIn profile">
+            <div class="card bg-primary text-white text-center mb-4" style="transition: transform 0.3s, box-shadow 0.3s; height: 100%;">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <img src="arka.jpeg" alt="Arkajyoti Saha" class="rounded-circle img-fluid mx-auto d-block mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                  <h5 class="card-title">Arkajyoti Saha</h5>
+                  <p class="card-text">Co-Founder & Founding Engineer</p>
+                </div>
+                <i class="bi bi-linkedin fs-4 mt-3"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="notifyForm" action="mailto:scintilink@gmail.com" method="post" enctype="text/plain">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="Enter your email" aria-label="Email address" required>
+              <button class="btn btn-primary" type="submit" onclick="sendEmail()">Notify Me</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <p class="text-center mt-4">Email: scintilink@gmail.com</p>
+      <p class="text-center">Phone: (+44)7553650476</p>
+    </div>
+  </section>
+
+  <script>
+    function sendEmail() {
+      const userEmail = document.getElementById('userEmail').value;
+      if (userEmail) {
+        const mailtoLink = `mailto:scintilink@gmail.com?subject=Notification Request&body=Hi there,
+
+I'm excited to hear more about what you're building at Scintilink! Please notify me about your latest updates, product launches, and any exciting news.
+
+Here's my email: ${userEmail}
+
+Looking forward to staying connected!`;
+        window.location.href = mailtoLink;
+      }
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer class="py-3 bg-dark text-white text-center">
+    <div class="container">
+      <p class="mb-2">2025 Scintilink - Innovating Innovation and Democratizing Knowledge</p>
+      <div class="d-flex justify-content-center gap-3">
+        <!-- <a href="https://linkedin.com" target="_blank" class="text-white">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" class="text-white">Twitter</a> -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
